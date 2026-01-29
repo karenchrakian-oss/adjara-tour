@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Тур по горной Аджарии</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Poppins,system-ui;background:#fff8f0;color:#0f172a}
+a{text-decoration:none;color:inherit}
+section{padding:80px 20px}
+.container{max-width:1100px;margin:auto}
+h1,h2{margin:0 0 20px}
+.btn{display:inline-block;padding:14px 30px;border-radius:999px;background:linear-gradient(90deg,#e34234,#d93e2f);color:white;font-weight:600;box-shadow:0 6px 20px rgba(0,0,0,.2);margin:6px}
+.hero{min-height:90vh;background:url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Machakhela_Gorge_01.jpg/1280px-Machakhela_Gorge_01.jpg') center/cover;position:relative;color:white}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0,.7))}
+.hero-content{position:relative;z-index:2;max-width:650px;padding-top:80px}
+.subtitle{font-size:20px;opacity:.95}
+.grid{display:grid;gap:24px}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:white;border-radius:24px;padding:28px;box-shadow:0 6px 20px rgba(0,0,0,.08)}
+.icon{font-size:34px;margin-bottom:10px}
+.badge{display:inline-block;background:#fde2c2;color:#d93e2f;padding:6px 14px;border-radius:999px;font-size:13px;margin-bottom:12px}
+.price{font-size:42px;font-weight:700;color:#d93e2f}
+.footer{padding:40px;text-align:center;opacity:.6;background:#f3e5e0}
+@media(max-width:600px){.btn{display:block;width:100%;text-align:center;margin:10px 0}}
+.slider{position:relative;overflow:hidden;border-radius:18px;box-shadow:0 6px 20px rgba(0,0,0,.15)}
+.slides{display:flex;transition:transform 0.5s ease-in-out}
+.slides img{width:100%;flex-shrink:0;height:300px;object-fit:cover;border-radius:18px}
+.prev,.next{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.5);color:white;border:none;padding:10px 15px;border-radius:50%;cursor:pointer}
+.prev{left:10px}
+.next{right:10px}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="container hero-content">
+    <span class="badge">Авторский тур</span>
+    <h1>Тур по горной Аджарии</h1>
+    <p class="subtitle">Водопады • ущелья • слияние рек • грузинское застолье с танцами</p>
+    <br>
+    <a class="btn" href="https://wa.me/995558991857" target="_blank">WhatsApp</a>
+    <a class="btn" href="https://t.me/+995558991857" target="_blank">Telegram</a>
+    <a class="btn" href="tel:+995558991857">Позвонить</a>
+  </div>
+</section>
+
+<section>
+<div class="container">
+<h2>Маршрут тура</h2>
+<div class="grid grid-3">
+<div class="card">🌊 Слияние двух рек</div>
+<div class="card">💧 Водопад Махунцети</div>
+<div class="card">💦 Водопад Мирвети</div>
+<div class="card">🌉 Мост Царицы Тамары</div>
+<div class="card">🏰 Крепость Гвара</div>
+<div class="card">🏔 Панорамные площадки Мачахельского ущелья</div>
+<div class="card">💃 Грузинское застолье с национальными танцами</div>
+</div>
+</div>
+</section>
+
+<section style="background:#fff0e0">
+<div class="container">
+<h2>Галерея</h2>
+<div class="slider">
+<div class="slides" id="slides">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Machakhela_Gorge_01.jpg/1280px-Machakhela_Gorge_01.jpg" alt="Мачахела">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Machakhela_river_Adjarian_mountains.jpg/1280px-Machakhela_river_Adjarian_mountains.jpg" alt="Река в Мачахеле">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Georgian_dance.jpg/1280px-Georgian_dance.jpg" alt="Грузинские танцы">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Machakhela_Valley.jpg/1280px-Machakhela_Valley.jpg" alt="Ущелье Мачахела">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Georgian_traditional_dance_2.jpg/1280px-Georgian_traditional_dance_2.jpg" alt="Национальные танцы">
+</div>
+<button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+<button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+</div>
+</section>
+
+<section style="background:#f0fdf4">
+<div class="container">
+<h2>Что делает тур особенным</h2>
+<div class="grid grid-3">
+<div class="card"><div class="icon">🌿</div>Живая природа: водопады, ущелья и слияние рек</div>
+<div class="card"><div class="icon">🏡</div>Настоящая грузинская семья, а не туристический ресторан</div>
+<div class="card"><div class="icon">🍷</div>Танцы, домашнее вино и тёплая атмосфера без ограничений</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Стоимость</h2>
+<div class="card" style="text-align:center">
+<div class="price">120 лари</div>
+<p>с человека</p>
+<p><strong>Всё включено:</strong> транспорт, маршрут, водопады, застолье, танцы и дегустация.</p>
+</div>
+</div>
+</section>
+
+<section style="background:#fff7ed">
+<div class="container">
+<h2>О гиде</h2>
+<div class="card">
+<p><strong>Меня зовут Карен.</strong> Я местный — родился и вырос здесь, в Аджарии.</p>
+<p>Уже более 4 лет работаю в сфере туризма и показываю гостям самые красивые и живые места региона.</p>
+<p>Этот маршрут — мой <strong>авторский тур</strong>. Я собрал его так, чтобы вы увидели настоящую горную Аджарию: природу, водопады, ущелья и почувствовали грузинское гостеприимство в кругу реальной семьи — с танцами, вином и тёплой атмосферой.</p>
+<p>Для меня важно, чтобы каждая поездка была не просто экскурсией, а настоящим впечатлением.</p>
+</div>
+</div>
+</section>
+
+<section id="contact" style="background:#d93e2f;color:white">
+<div class="container">
+<h2>Контакты</h2>
+<p>Свяжитесь со мной любым удобным способом:</p>
+<br>
+<a class="btn" href="https://wa.me/995558991857" target="_blank">WhatsApp</a>
+<a class="btn" href="https://t.me/+995558991857" target="_blank">Telegram</a>
+<a class="btn" href="https://instagram.com/car_trip_georgia" target="_blank">Instagram</a>
+<a class="btn" href="tel:+995558991857">Позвонить</a>
+</div>
+</section>
+
+<div class="footer">© Тур по горной Аджарии • Авторский маршрут</div>
+
+<script>
+let index = 0;
+function showSlide(i){
+  const slides = document.getElementById('slides');
+  const total = slides.children.length;
+  index = (i + total) % total;
+  slides.style.transform = 'translateX(' + (-index*100) + '%)';
+}
+function moveSlide(n){
+  showSlide(index+n);
+}
+showSlide(0);
+</script>
+
+</body>
+</html>
